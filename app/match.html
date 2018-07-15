@@ -1,0 +1,109 @@
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Ethereum Forum</title>
+
+    <style type="text/css">
+        body {
+            font: 16px "Microsoft Yahei";
+            width: 1024px;
+            background-color: #fff;
+            margin: 0 auto;
+            padding: 0;
+            background: url(images/wap.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="team.html">球队管理</a>
+            </li>
+            <li>
+                <a href="market.html">球员市场</a>
+            </li>
+            <li>
+                <a href="match.html">比赛场</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+
+        <div class="container">
+            <div class="top">
+                <div class="bar">
+                    <span class="lTeam" id="leftTeam"></span>
+                    <div class="bar-mid"></div>
+                    <span class="rTeam" id="rightTeam"></span>
+                </div>
+            </div>
+
+            <div class="mide">
+                <div class="left-container">
+                    <ul>
+                        <div class="team" id="left-team-header">
+                            <span>阵容</span>
+                        </div>
+                        <div id="left-starter-player-list">
+                            <div class="sf">
+                                <span>首发</span>
+                                <span>能力值</span>
+                            </div>
+
+                        </div>
+                        <div id="left-backup-player-list">
+                            <div class="tb">
+                                <span>替补</span>
+                                <span>能力值</span>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="right-container">
+                    <ul>
+                        <div class="team" id="right-team-header">
+                            <span>阵容</span>
+                        </div>
+                        <div id="right-starter-player-list">
+                            <div class="sf">
+                                <span>首发</span>
+                                <span>能力值</span>
+                            </div>
+
+                        </div>
+                        <div id="right-backup-player-list">
+                            <div class="tb">
+                                <span>替补</span>
+                                <span>能力值</span>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="matching-animation-container">
+                <img class="matching-img" src="./images/match/matching.gif" />
+                <div class="matching-text-container">
+                    <span class="matching-text">比赛正在激烈的进行中</span>
+                </div>
+            </div>
+
+            <div id="matching-result-container">
+                <div id="result-text-1"></div>
+                <div id="result-text-2"></div>
+            </div>
+
+        </div>
+    </main>
+</body>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<script src="match.js"></script>
+
+</html>

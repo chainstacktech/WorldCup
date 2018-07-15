@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+
+  .login-box {
+    width: 450px;
+    height: 300px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #login-box {
+    justify-content: flex-start;
+  }
+
+  .login-title {
+    font-size: 50px;
+    color: #333;
+  }
+
+  .address-input {
+    width: 300px;
+    height: 40px;
+    background: none;
+    border: 2px solid #4e4e4e;
+    border-radius: 5px;
+    color: #4e4e4e;
+    font-size: 25px;
+    padding: 5px;
+    margin: 0px 50px 30px 50px;
+  }
+
+  .login-btn {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a89ff;
+    color: #fff;
+    margin: 0px 30px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .login-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+  }
+
+  .label {
+    font-size: 25px;
+  }
+
+  #init-box {
+    justify-content: space-around;
+    display: none;
+  }
+  #create-team-btn {
+    
+  }
+  .country-title {
+    font-size: 35px;
+    color: #333;
+  }
+  .country-container {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+  }

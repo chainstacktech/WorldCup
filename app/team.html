@@ -1,0 +1,101 @@
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Ethereum Forum</title>
+
+    <style type="text/css">
+        body {
+            font: 16px "Microsoft Yahei";
+            width: 1024px;
+            background-color: #fff;
+            margin: 0 auto;
+            padding: 0;
+            background-image: url("../images/wap.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="team.html">球队管理</a>
+            </li>
+            <li>
+                <a href="market.html">球员市场</a>
+            </li>
+            <li>
+                <a href="match.html">比赛场</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div>
+            <ul>
+                <div class="team" id="team-header">
+                    <span>阵容</span>
+                    <a href="match.html" class="attend-match-btn">前往竞技场</a>
+                </div>
+                <div id="starter-player-list">
+                    <div class="sf">
+                        <span>首发</span>
+                        <span>能力值</span>
+                    </div>
+
+                </div>
+                <div id="backup-player-list">
+                    <div class="tb">
+                        <span>替补</span>
+                        <span>能力值</span>
+                    </div>
+
+                </div>
+            </ul>
+        </div>
+
+        <div class="right-bar">
+            <div class="create-player-container">
+                <div class="team">创建球员</div>
+                <div>
+                    <input class="create-player-name" />
+                    <button class="create-player-btn" onclick="createRandomPlayer()">
+                        创建球员
+                    </button>
+                </div>
+            </div>
+
+            <div class="token-status-container">
+                <div class="team">Token 详情</div>
+                <div>
+                    <table class="table table-bordered">
+                        <tr>
+                            <td>Token价格</td>
+                            <td id="token-cost"></td>
+                        </tr>
+                        <tr>
+                            <td>当前账户余额</td>
+                            <td id="account-balance"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="buy-token-container">
+                <div class="team">购买 Token</div>
+                <div>
+                    <div id="buy-msg"></div>
+                    <input type="text" id="buy" class="token-number" placeholder="要购买的Token数量" " />&nbsp;
+                    <button onclick="buyTokens() " class="buy-token-btn ">Buy</button>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js "></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js "></script>
+<script src="team.js "></script>
+
+</html>

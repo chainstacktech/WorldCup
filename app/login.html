@@ -1,0 +1,61 @@
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Ethereum Forum</title>
+
+  <style type="text/css">
+    body {
+      font: 16px "Microsoft Yahei";
+      width: 1024px;
+      background-color: #fff;
+      margin: 0 auto;
+      padding: 0;
+      background: url(images/login-cover.jpg);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="login-box" class="login-box">
+      <div class="login-title">登录</div>
+      <div class="login-row">
+        <div class="label">地址</div>
+        <input class="address-input" />
+      </div>
+      <div>
+        <button id="login-btn" class="login-btn" onclick="login()">
+          登录
+        </button>
+      </div>
+    </div>
+    <div id="init-box" class="login-box">
+      <div class="country-title">选择你的球队</div>
+      <div>
+        <select id="country-selector" class="country-container">
+          <option value="England">英格兰</option>
+          <option value="France">法国</option>
+          <option value="Croatia">克罗地亚</option>
+          <option value="Belgium">比利时</option>
+        </select>
+      </div>
+      <div>
+        <button id="create-team-btn" class="login-btn" onclick="createMyTeam()">
+          组建我的球队
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<script src="login.js"></script>
+
+</html>

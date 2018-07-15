@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+nav {
+    display: flex;
+}
+
+a:link,
+a:visited {
+
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+a:active {
+    color: gold;
+}
+
+nav>ul {
+    list-style: none;
+    margin: 0 auto;
+    width: 1024px;
+    height: 42px;
+    padding: 0.8px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav ul li {
+    float: left;
+    padding: 10px;
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1024px;
+    position: relative;
+}
+
+.bar {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    border-top: 10px solid lightgray;
+    border-bottom: 10px solid gray;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 128, 0.8);
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bar .lTeam {
+    position: absolute;
+    left: 200px;
+    font-size: 30px;
+    color: white;
+}
+
+.bar .vs {
+    position: absolute;
+    left: 500px;
+    font-size: 30px;
+    color: white;
+}
+
+.bar .rTeam {
+    position: absolute;
+    right: 200px;
+    font-size: 30px;
+    color: white;
+}
+
+.leftMask {
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+}
+
+.rightMask {
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: absolute;
+    top: -20px;
+    right: 30px;
+}
+
+.leftMask img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.rightMask img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.mide {
+    width: 100%;
+    height: 800px;
+    top: 10px;
+    position: relative;
+    background-color: rgba(99, 99, 99, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.aTeam {
+    position: absolute;
+    float: left;
+}
+
+.bTeam {
+    position: absolute;
+    float: left;
+    right: 0;
+}
+
+.mide ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    color: white;
+}
+
+.sf {
+    width: 100%;
+    height: 25px;
+    background-color: rgba(200, 25, 100, 0.5);
+}
+
+.sf span {
+    margin-right: 200px;
+}
+
+.team {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+    position: relative;
+}
+
+.country-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 0px;
+}
+
+.mide ul li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    position: relative;
+    background-color: rgba(99, 99, 99, 0.5);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.mide ul li .number {
+    width: 20px;
+    height: 20px;
+    border: 3px solid skyblue;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.tb {
+    height: 25px;
+    background-color: rgba(0, 0, 100, 0.5);
+    padding: 5px;
+}
+
+.tb span {
+    margin-right: 200px;
+}
+
+.mide ul li .power {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 250px;
+}
+
+.create-match-btn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5e3a;
+    color: #fff;
+    margin: 0px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.waiting-match-btn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5e3a;
+    color: #fff;
+    margin: 0px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.face-img {
+    width: 50px;
+    height: 50px;
+}
+
+#matching-animation-container {
+    position: fixed;
+    top: 15%;
+    left: 30%;
+    display: none;
+}
+
+.matching-img {
+    width: 480px;
+    height: 360px;
+}
+
+.matching-text-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.matching-text {
+    color: #fff;
+    font-size: 25px;
+}
+
+#matching-result-container {
+    position: fixed;
+    top: 25%;
+    left: 38%;
+    display: none;
+    background-color: rgba(204, 204, 204, 0.8);
+    width: 300px;
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#result-text-1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#result-text-2 {
+    font-size: 25px;
+}
